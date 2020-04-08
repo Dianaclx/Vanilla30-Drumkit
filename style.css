@@ -1,6 +1,7 @@
 html {
   font-size: 10px;
-  background: url(https://i.imgur.com/b9r5sEL.jpg) bottom center;
+  background: url(https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-1.2.1&w=1000&q=80)
+    bottom center;
   background-size: cover;
 }
 
@@ -24,6 +25,7 @@ html {
 .key {
   border: 0.4rem solid pink;
   border-radius: 0.5rem;
+  padding: 1rem 0.5rem;
   margin: 1rem;
   font-size: 1rem 0.5rem;
   transition: all 0.07s ease;

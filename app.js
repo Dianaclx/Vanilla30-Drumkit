@@ -1,18 +1,16 @@
+function removeTransition(e) {
+  if (e.propertyName !== "transform") return;
+  e.target.classList.remove("playing");
+}
+
 function playsound(e) {
   const audio = this.document.querySelector(`audio[data-key='${e.keyCode}']`);
   const key = this.document.querySelector(`div[data-key='${e.keyCode}']`);
   if (!audio) return;
 
+  key.classList.add("playing");
   audio.currentTime = 0;
   audio.play();
-  key.classList.add("playing");
-}
-
-// Fuction to remove border -> used in keys.foreach below it.
-
-function removeTransition(e) {
-  if (e.propertyName !== "transform") return;
-  e.target.classList.remove("playing");
 }
 
 const keys = Array.from(document.querySelectorAll(".key"));
